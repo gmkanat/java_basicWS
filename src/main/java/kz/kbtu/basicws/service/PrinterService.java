@@ -3,11 +3,13 @@ package kz.kbtu.basicws.service;
 import kz.kbtu.basicws.model.BWPrinter;
 import kz.kbtu.basicws.model.ColorPrinter;
 import kz.kbtu.basicws.model.Printer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class PrinterService {
-    Printer printer = new Printer();
+    @Autowired
+    Printer printer;
     public PrinterService() {
         //printer = new Printer(new ColorPrinter());
     }

@@ -1,7 +1,12 @@
 package kz.kbtu.basicws.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Printer {
-    private IPrintable printable;
+    @Autowired
+    IPrintable printable;
 
     public Printer() {
     }

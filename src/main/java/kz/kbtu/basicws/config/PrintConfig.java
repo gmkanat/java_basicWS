@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class PrintConfig {
     @Bean
-    public IPrintable printer(){
+    public IPrintable iprintable(){
         return new ColorPrinter();
     }
 }
